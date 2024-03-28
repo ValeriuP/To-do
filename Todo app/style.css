@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.page_container{
+    height: 100%;
+    background-color: hsl(235, 21%, 11%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page-image-container{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+   
+    /* background-color: white; */
+
+}
+.page-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  
+}
+.page-image-mobil{
+    display: none;
+}
+.page_todo_container{
+    border: 3px solid white;
+    width: 45%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    z-index: 12;
+}
+.todo-sun{
+  display: flex;
+  justify-content: space-between;
+}
+.text-todo{
+   font-size: 40px;
+   color: white;
+}
+.currently{
+  background-color:hsl(235, 24%, 19%) ;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  align-items: center;
+  padding: 10px;
+}
+.currently-logo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border:1px solid white
+  
+}
+.currently_input{
+ width: 90%;
+ height: 35px;
+ margin-left: 35px;
+ border: none;
+ background-color:hsl(235, 24%, 19%) ;
+ font-size: large;
+ z-index: 11;
+}
+.complete{
+  width: 100%;
+  height: 35px;
+  background-color:hsl(235, 24%, 19%) ;
+  /* display: flex; */
+  flex-direction: row;
+  margin-top: 25px;
+  align-items: center;
+}
+.complete_logo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border:1px solid white;
+  margin-left: 10px;
+
+}
+
+.complete_text{
+  background-color:hsl(235, 24%, 19%)  ;
+  color: hsl(234, 39%, 85%);
+  margin-left: 25px;
+}
+.item-container{
+  width: 100%;
+  height: 35px;
+  background-color:hsl(235, 24%, 19%) ;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+
+}
+
+  /* styles for tablet devices */
+  .page_todo_container{
+    display: flex;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 991px) {
+    body {
+      width: 90%;
+      margin: auto;
+    }
+    .page-image{
+        display: none;
+    }
+    .page-image-mobil{
+        display: block;
+    }
+  }
+  
+  /* styles for mobile devices */
+  @media only screen and (max-width: 767px) {
+    body {
+      width: 100%;
+      margin: 0;
+    }
+    .page-image{
+        display: none;
+    }
+    .page-image-mobil{
+        display: block;
+    }
+  }
