@@ -85,7 +85,7 @@ body{
   margin-top: 25px;
   align-items: center;
 }
-.complete_logo{
+.complete_button{
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -98,6 +98,7 @@ body{
   background-color:hsl(235, 24%, 19%)  ;
   color: hsl(234, 39%, 85%);
   margin-left: 25px;
+  font-size: 25px;
 }
 .item-container{
   width: 100%;
