@@ -6,16 +6,19 @@ currentlyInput.addEventListener("keydown",(event)=>{
        let itemContainer=document.createElement("div") ;
        let itemBtn=document.createElement("button")
        let itemSpan = document.createElement("span")
+       let deletItem=document.createElement("button")
     //   implementare de btn,span
        itemContainer.appendChild(itemBtn);
        itemContainer.appendChild(itemSpan);
-       container.appendChild(itemContainer)
+       container.appendChild(itemContainer);
+       itemContainer.appendChild(deletItem);
        itemBtn.addEventListener("click",e=>handleTaskClick(e));
 
     //    adaugare clasa la div creat din javascript
        itemContainer.classList.add("item-container");
        itemBtn.classList.add("complete_button");
        itemSpan.classList.add("complete_text");
+       deletItem.classList.add("delet_item")
 
        itemSpan.innerText=currentlyInput.value;
 
